@@ -18,6 +18,9 @@
   --radius: 0px;
   --radius-lg: 0px;
   --container: min(1120px, calc(100% - 40px));
+  --section-space-y: 118px;
+  --section-space-sm-top: 36px;
+  --section-space-sm-bottom: 74px;
 }
 
 * {
@@ -191,11 +194,11 @@ svg * {
 }
 
 .section {
-  padding: 132px 0;
+  padding: var(--section-space-y) 0;
 }
 
 .section-sm {
-  padding: 28px 0 0;
+  padding: var(--section-space-sm-top) 0 var(--section-space-sm-bottom);
 }
 
 .eyebrow {
@@ -672,6 +675,8 @@ svg * {
 
 .stats-grid {
   grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  gap: 24px;
 }
 
 .about-grid {
@@ -736,16 +741,24 @@ svg * {
 }
 
 .stat-card {
-  padding: 28px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 100%;
+  padding: 30px 30px 28px;
 }
 
 .stat-card span {
   display: inline-flex;
-  margin-bottom: 18px;
-  font-size: 0.8rem;
-  letter-spacing: 0.18em;
-  color: var(--primary-deep);
-  font-weight: 700;
+  align-items: baseline;
+  margin-bottom: 2px;
+  font-family: "Sora", "Manrope", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0.24em;
+  font-weight: 600;
+  color: rgba(93, 133, 178, 0.82);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .stat-card h2 {
@@ -755,7 +768,7 @@ svg * {
 }
 
 .stat-card p {
-  margin-top: 10px;
+  margin-top: 2px;
   color: var(--muted);
   line-height: 1.8;
 }
