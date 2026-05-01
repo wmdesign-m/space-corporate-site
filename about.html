@@ -25,6 +25,9 @@
   </head>
 
   <body>
+    <div id="top"></div>
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html#top" class="brand" aria-label="トップへ戻る">
@@ -50,8 +53,8 @@
         </button>
 
         <nav class="global-nav" id="global-nav">
-          <a href="about.html">私たちについて</a>
-          <a href="services.html" class="is-current">サービス・対応工事</a>
+          <a href="about.html" class="is-current">私たちについて</a>
+          <a href="services.html">サービス・対応工事</a>
           <a href="works.html">施工実績</a>
           <a href="company.html">会社情報</a>
           <a href="partner-recruit.html">協力会社・採用</a>
@@ -72,13 +75,20 @@
       <!-- PAGE INTRO -->
       <section class="section page-hero-dark page-hero-about">
         <div class="container">
-          <p class="eyebrow">ABOUT</p>
-          <h1>現場ごとに最適な対応を行っています</h1>
-          <p>
-            株式会社スペースは、内装工事・原状回復工事を中心に、
-            現場ごとの条件に応じた施工を行っております。
-            一つひとつの案件に対して、無理のない進行と確実な仕上がりを大切にしております。
-          </p>
+          <div class="page-intro-layout reveal">
+            <div class="page-intro-copy">
+              <p class="page-intro-kicker">ABOUT</p>
+              <h1 class="page-intro-title">現場ごとに最適な対応を行っています</h1>
+              <p class="page-intro-text">
+                株式会社スペースは、内装工事・原状回復工事を中心に、
+                現場ごとの条件に応じた施工を行っております。
+                一つひとつの案件に対して、無理のない進行と確実な仕上がりを大切にしております。
+              </p>
+            </div>
+            <div class="page-intro-visual reveal delay-1">
+              <img src="images/about-main.jpg" alt="内装工事の現場イメージ" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -185,8 +195,8 @@
           </p>
 
           <div class="cta-buttons">
-            <a href="contact.html" class="btn-primary">まずは相談してみる</a>
-            <a href="services.html" class="btn-secondary">対応内容を確認する</a>
+            <a href="contact.html" class="btn btn-primary">まずは相談してみる</a>
+            <a href="services.html" class="btn btn-secondary">対応内容を確認する</a>
           </div>
         </div>
       </section>

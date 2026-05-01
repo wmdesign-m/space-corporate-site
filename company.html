@@ -25,6 +25,9 @@
   </head>
 
   <body class="company-page">
+    <div id="top"></div>
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html#top" class="brand" aria-label="トップへ戻る">
@@ -51,9 +54,9 @@
 
         <nav class="global-nav" id="global-nav">
           <a href="about.html">私たちについて</a>
-          <a href="services.html" class="is-current">サービス・対応工事</a>
+          <a href="services.html">サービス・対応工事</a>
           <a href="works.html">施工実績</a>
-          <a href="company.html">会社情報</a>
+          <a href="company.html" class="is-current">会社情報</a>
           <a href="partner-recruit.html">協力会社・採用</a>
           <a href="contact.html" class="nav-cta">案件のご相談</a>
         </nav>
@@ -72,14 +75,21 @@
       <!-- PAGE INTRO -->
       <section class="section page-hero-dark page-hero-company">
         <div class="container">
-          <p class="eyebrow">COMPANY</p>
-          <h1>安心してご相談いただける体制を整えています</h1>
-          <p>
-            株式会社スペースでは、内装工事を中心に、
-            現場ごとの条件に応じた対応を行っております。
-            施工内容だけでなく、進行や対応面においても
-            安心してご相談いただける体制づくりを大切にしています。
-          </p>
+          <div class="page-intro-layout reveal">
+            <div class="page-intro-copy">
+              <p class="page-intro-kicker">COMPANY</p>
+              <h1 class="page-intro-title">安心してご相談いただける体制を整えています</h1>
+              <p class="page-intro-text">
+                株式会社スペースでは、内装工事を中心に、
+                現場ごとの条件に応じた対応を行っております。
+                施工内容だけでなく、進行や対応面においても
+                安心してご相談いただける体制づくりを大切にしています。
+              </p>
+            </div>
+            <div class="page-intro-visual reveal delay-1">
+              <img src="images/company-main.jpg" alt="会社情報のイメージ" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -201,8 +211,8 @@
           </p>
 
           <div class="cta-buttons">
-            <a href="contact.html" class="btn-primary">まずは相談してみる</a>
-            <a href="services.html" class="btn-secondary">対応内容を確認する</a>
+            <a href="contact.html" class="btn btn-primary">まずは相談してみる</a>
+            <a href="services.html" class="btn btn-secondary">対応内容を確認する</a>
           </div>
         </div>
       </section>
