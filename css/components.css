@@ -3,7 +3,7 @@
 /* ===== components.css ===== */
 
 /* =========================
-  共通アイコン
+  共通アイコン（主にinline SVG用: .card-icon）
 ========================= */
 .card-icon {
   width: 32px;
@@ -875,19 +875,27 @@ main > .section:first-of-type {
 }
 
 
+/* .card-icon-img は <img src="...svg"> で読み込むカードアイコン用 */
 .card-icon-img {
-  width: 32px;
-  height: 32px;
   display: block;
+  width: 30px;
+  height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  object-fit: contain;
   margin-bottom: 18px;
-  opacity: 0.9;
+  color: var(--primary-deep);
+  opacity: 0.86;
+  flex: 0 0 auto;
 }
 
 .info-card .card-icon-img,
 .service-card .card-icon-img,
 .glass-card .card-icon-img,
 .recruit-card .card-icon-img,
-.card .card-icon-img {
+.card .card-icon-img,
+.strength-list .card-icon-img,
+.contact-note-box .card-icon-img {
   color: var(--primary-deep);
 }
 
