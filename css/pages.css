@@ -203,8 +203,8 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 0;
-  padding-top: 120px;
-  padding-bottom: 96px;
+  padding-top: 104px;
+  padding-bottom: 88px;
 }
 
 /* TOP FVと同系統のオーバーレイ */
@@ -235,14 +235,14 @@
 
 /* 右画像は使わず、背景画像として見せる */
 .page-hero-dark .page-intro-layout {
-  grid-template-columns: minmax(0, 660px) 1fr;
+  display: block;
   min-height: 360px;
-  align-items: center;
   margin-top: 0;
 }
 
 /* テキスト部分だけ濃紺パネル */
 .page-hero-dark .page-intro-copy {
+  width: min(680px, 100%);
   padding: 42px 46px;
   background: rgba(16, 32, 51, 0.88);
   border-left: 2px solid rgba(111, 183, 223, 0.72);
@@ -953,15 +953,6 @@
 /* ========================================
   WORKS PAGE 
 ======================================== */
-.works-page .page-intro-layout {
-  align-items: center;
-  gap: 48px;
-}
-
-.works-page .page-intro-copy {
-  max-width: 640px;
-}
-
 .works-page .page-intro-title {
   line-height: 1.2;
   letter-spacing: 0.04em;
@@ -985,8 +976,8 @@
 
 /* 導入後のサマリー */
 .works-page .section-sm {
-  padding-top: 72px;
-  padding-bottom: 96px;
+  padding-top: 64px;
+  padding-bottom: 80px;
 }
 
 .works-page .section-heading h2 {
@@ -1071,7 +1062,7 @@
 
 /* CTA前の余白整理 */
 .works-page .cta-final {
-  padding-top: 112px;
+  padding-top: 104px;
   padding-bottom: 64px;
 }
 
@@ -1198,7 +1189,7 @@
 
 /* SUMMARY：テキストとカードの余白を広げる */
 .section-sm .company-panels {
-  margin-top: 64px !important;
+  margin-top: 56px !important;
 }
 
 /* フッター前の抜け感 */
