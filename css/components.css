@@ -392,6 +392,13 @@ main > .section:first-of-type {
   letter-spacing: 0.04em;
 }
 
+.service-card h3,
+.info-card h3,
+.glass-card h3,
+.recruit-card h3 {
+  color: var(--text);
+}
+
 .glass-card p,
 .glass-card li,
 .service-card p,
@@ -430,6 +437,17 @@ main > .section:first-of-type {
 .glass-card li {
   color: var(--muted);
   line-height: 1.9;
+}
+
+.service-card p,
+.service-card li,
+.info-card p,
+.info-card li,
+.glass-card p,
+.glass-card li,
+.recruit-card p,
+.recruit-card li {
+  color: var(--muted);
 }
 
 .service-card {
