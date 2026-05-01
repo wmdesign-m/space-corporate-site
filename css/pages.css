@@ -263,10 +263,6 @@
   color: rgba(216, 232, 248, 0.72);
 }
 
-/* 右コンテナ画像は非表示 */
-.page-hero-dark .page-intro-visual {
-  display: none;
-}
 
 /* ページ別背景画像 */
 .page-hero-about {

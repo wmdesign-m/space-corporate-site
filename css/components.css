@@ -812,8 +812,37 @@ main > .section:first-of-type {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  padding: 24px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(16, 32, 51, 0.08);
+  box-shadow: 0 14px 32px rgba(16, 32, 51, 0.08);
+  padding: 30px 28px;
+  border-radius: 0;
+}
+
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.card p {
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.dark-section .card {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+.dark-section .card h3 {
+  color: #ffffff;
+}
+
+.dark-section .card p {
+  color: rgba(255, 255, 255, 0.76);
 }
