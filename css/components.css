@@ -873,3 +873,25 @@ main > .section:first-of-type {
 .dark-section .card p {
   color: rgba(255, 255, 255, 0.76);
 }
+
+
+.card-icon-img {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin-bottom: 18px;
+  opacity: 0.9;
+}
+
+.info-card .card-icon-img,
+.service-card .card-icon-img,
+.glass-card .card-icon-img,
+.recruit-card .card-icon-img,
+.card .card-icon-img {
+  color: var(--primary-deep);
+}
+
+.dark-section .service-card .card-icon-img,
+.dark-section .info-card .card-icon-img {
+  opacity: 0.9;
+}
