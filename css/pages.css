@@ -1184,3 +1184,80 @@
 .works-page .site-footer {
   margin-top: 0;
 }
+
+/* === flow/shared icon/form adjustments === */
+#coverage .card-icon-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.9;
+  filter: saturate(0.72);
+}
+
+.card-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-family: var(--font-serif);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  color: rgba(93, 133, 178, 0.92);
+}
+
+.flow-line {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.flow-line::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: rgba(93, 133, 178, 0.28);
+}
+
+.flow-step { position: relative; z-index: 1; text-align: center; }
+.flow-number {
+  width: 64px; height: 64px; margin: 0 auto 26px; display: grid; place-items: center;
+  border-radius: 50%; border: 1px solid rgba(93, 133, 178, 0.32); background: #fff;
+  font-family: var(--font-serif); font-size: 0.9rem; letter-spacing: 0.08em; color: var(--primary-deep);
+}
+.flow-step h3 { margin: 0 0 12px; font-size: 1.08rem; line-height: 1.5; letter-spacing: 0.05em; color: var(--text); }
+.flow-step p { margin: 0 auto; max-width: 20em; font-size: 0.9rem; line-height: 1.85; color: var(--muted); }
+
+.dark-section .flow-number { background: #102033; border-color: rgba(216, 232, 248, 0.38); color: #d8e8f8; }
+.dark-section .flow-line::before { background: rgba(216, 232, 248, 0.22); }
+.dark-section .flow-step h3 { color: #fff; }
+.dark-section .flow-step p { color: rgba(255, 255, 255, 0.72); }
+
+.contact-grid { align-items: start; }
+.contact-note-box { padding: 28px; }
+.contact-note-box .card-icon-img { width: 24px; height: 24px; margin-bottom: 14px; }
+.contact-form { padding: 34px; display: grid; gap: 16px; }
+.form-field { display: grid; gap: 8px; }
+.form-field label { font-size: 0.9rem; font-weight: 700; color: var(--text); }
+.form-field label span {
+  margin-left: 8px; padding: 2px 8px; font-size: 0.72rem; border-radius: 999px;
+  background: rgba(93, 133, 178, 0.14); color: var(--primary-deep); font-weight: 700;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid rgba(93, 133, 178, 0.36);
+  background: #fff; color: var(--text); font: inherit; line-height: 1.6;
+}
+.contact-form textarea { min-height: 180px; resize: vertical; }
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none; border-color: #2a4a6b; box-shadow: 0 0 0 3px rgba(93, 133, 178, 0.18);
+}
+.contact-form .form-note { margin: 2px 0 0; font-size: 0.84rem; color: var(--muted); }
+.contact-form .btn { width: fit-content; min-width: 220px; }
