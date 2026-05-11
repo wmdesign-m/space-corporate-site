@@ -1754,6 +1754,12 @@
 }
 
 
+
+.services-page .services-property-list li:last-child,
+.services-page .services-property-list li:nth-last-child(2) {
+  border-bottom: 1px solid rgba(16, 32, 51, 0.12);
+}
+
 .services-page .cta-panel + .section-link {
   margin-top: 72px;
 }
@@ -1860,12 +1866,17 @@
 }
 
 .services-page .lower-cta p,
-.services-page .lower-cta li {
+.services-page .lower-cta li,
+.services-page .lower-cta .cta-trust-list li {
   color: var(--muted);
 }
 
 .services-page .lower-cta .btn {
   margin-top: 20px;
+}
+
+.services-page .lower-cta .btn-primary {
+  color: #ffffff;
 }
 
 .services-page .lower-cta + .site-footer {
