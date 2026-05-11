@@ -1663,6 +1663,24 @@
 ========================= */
 .services-page .breadcrumb {
   padding-top: 18px;
+  background: rgba(16, 32, 51, 0.92);
+}
+
+.services-page .breadcrumb a,
+.services-page .breadcrumb li {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.services-page .breadcrumb-list li + li::before {
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.services-page .breadcrumb a:hover {
+  color: #ffffff;
+}
+
+.services-page .breadcrumb li[aria-current="page"] {
+  color: #ffffff;
 }
 
 .services-page .lower-section .section-heading p {
@@ -1725,16 +1743,39 @@
 }
 
 .services-property-list li {
-  padding: 16px 18px;
-  border: 1px solid rgba(16, 32, 51, 0.14);
-  background: rgba(255, 255, 255, 0.66);
+  padding: 16px 0;
+  border: none;
+  border-bottom: 1px solid rgba(16, 32, 51, 0.12);
+  background: transparent;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 
+.services-property-list li:last-child,
+.services-property-list li:nth-last-child(2) {
+  border-bottom: none;
+}
+
+.services-page .cta-panel + .section-link {
+  margin-top: 72px;
+}
+
 .services-page .flow-step h3 {
   font-size: 1.18rem;
+}
+
+.services-page .lower-section-dark .flow-step h3 {
+  color: #ffffff;
+}
+
+.services-page .lower-section-dark .flow-step p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.services-page .lower-section-dark .flow-number {
+  color: rgba(216, 232, 248, 0.7);
+  font-family: var(--font-serif);
 }
 
 .cta-trust-list {
