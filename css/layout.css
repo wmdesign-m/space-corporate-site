@@ -67,6 +67,7 @@
 
 .strength {
   padding: 84px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
 }
 
 .cta-final {
