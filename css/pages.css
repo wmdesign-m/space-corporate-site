@@ -348,8 +348,9 @@
 .works-feature-image .work-image {
   position: relative;
   overflow: hidden;
-  height: 100%;
-  min-height: 430px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: auto;
   background-size: cover;
   background-position: center 52%;
   background-repeat: no-repeat;
@@ -375,6 +376,7 @@
   padding: 34px 32px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.12);
+  max-width: 520px;
 }
 
 .works-feature-lead {
@@ -792,36 +794,60 @@
   TOP section 導線・構成調整
 ========================= */
 .section-link {
-  margin-top: 30px;
-  text-align: left;
+  margin-top: 48px;
+  text-align: center;
 }
 
-.section-link a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
-  padding: 12px 28px;
-  gap: 10px;
-  border: 1px solid rgba(58, 85, 114, 0.35);
-  background: rgba(242, 247, 252, 0.92);
-  color: #1f344a;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: all 0.3s ease;
+.arrow-link-underline {
+  position: relative;
+  display: inline-block;
+  padding: 0 2em 0.6em 0.5em;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--primary-deep);
 }
 
-.section-link a::after {
-  content: "→";
-  font-size: 0.92em;
-  opacity: 0.72;
+.arrow-link-underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  transform: skewX(50deg) translateX(0);
+  transition: transform 0.3s ease;
 }
 
-.section-link a:hover {
-  border-color: rgba(30, 52, 76, 0.5);
-  background: rgba(235, 243, 250, 0.96);
-  box-shadow: 0 8px 18px rgba(19, 36, 56, 0.1);
-  transform: translateY(-1px);
+.arrow-link-underline:hover::before,
+.arrow-link-underline:focus-visible::before {
+  transform: skewX(50deg) translateX(10%);
+}
+
+.arrow-link-underline:hover,
+.arrow-link-underline:focus-visible {
+  color: var(--primary);
+}
+
+#about .arrow-link-underline,
+#works .arrow-link-underline,
+#partner .arrow-link-underline {
+  color: #d8e8f8;
+}
+
+#about .arrow-link-underline:hover,
+#about .arrow-link-underline:focus-visible,
+#works .arrow-link-underline:hover,
+#works .arrow-link-underline:focus-visible,
+#partner .arrow-link-underline:hover,
+#partner .arrow-link-underline:focus-visible {
+  color: #ffffff;
+}
+
+#works .section-link {
+  margin-top: 48px;
 }
 
 #about .about-panel {
