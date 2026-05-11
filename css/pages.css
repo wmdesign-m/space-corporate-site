@@ -332,61 +332,31 @@
   max-width: 58ch;
 }
 
-.works-sales-grid {
+.works-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 40px;
   align-items: stretch;
+  margin-bottom: 34px;
 }
 
-.works-sales-grid .work-sales-card {
-  height: 100%;
-}
-
-.work-sales-card {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+.works-feature-image {
+  display: block;
   text-decoration: none;
-  color: inherit;
-  background: rgba(255, 255, 255, 0.055);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease,
-    background 0.3s ease;
-
-  cursor: pointer;
 }
 
-.work-sales-card:hover {
-  transform: translateY(-6px);
-
-  box-shadow:
-    0 24px 48px rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(158, 199, 243, 0.25);
-
-  border-color: rgba(158, 199, 243, 0.35);
-
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.work-sales-card:hover .work-image {
-  transform: scale(1.04);
-}
-
-.work-sales-card .work-image {
+.works-feature-image .work-image {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 16 / 10;
-  min-height: auto;
+  height: 100%;
+  min-height: 430px;
   background-size: cover;
-  background-position: center;
+  background-position: center 52%;
   background-repeat: no-repeat;
-  flex-shrink: 0;
+  transition: transform 0.35s ease;
 }
 
-.work-sales-card .work-image::after {
+.works-feature-image .work-image::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -397,90 +367,40 @@
   );
 }
 
-.work-sales-card .work-content {
+.works-feature-image:hover .work-image {
+  transform: scale(1.03);
+}
+
+.works-feature-body {
+  padding: 34px 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.works-feature-lead {
+  margin: 0 0 26px;
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.works-point-list {
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 32px 26px 30px;
-}
-
-.work-tag {
-  display: inline-flex;
-  width: fit-content;
-  margin-bottom: 16px;
-  padding: 6px 10px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.1em;
-  color: rgba(216, 232, 248, 0.86);
-  border: 1px solid rgba(216, 232, 248, 0.2);
-  background: rgba(216, 232, 248, 0.06);
-}
-
-.work-sales-card h3 {
-  margin: 0 0 22px;
-  font-size: 1.08rem;
-  font-weight: 700;
-  line-height: 1.6;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
-
-.work-meta {
-  display: grid;
-  gap: 0;
-  margin: 0 0 22px;
-}
-
-.work-meta div {
-  display: grid;
-  grid-template-columns: 82px 1fr;
-  gap: 16px;
-  padding: 12px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.075);
-}
-
-.work-meta div:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
-}
-
-.work-meta dt {
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: #9ec7f3;
-  letter-spacing: 0.04em;
-}
-
-.work-meta dd {
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 0;
-  font-size: 0.84rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.82);
+  padding: 0;
+  list-style: none;
 }
 
-.work-sales-card p {
-  margin: auto 0 0;
-  min-height: 74px;
-  font-size: 0.9rem;
-  line-height: 1.85;
-  color: rgba(255, 255, 255, 0.76);
-}
-
-.works-note {
-  margin-top: 28px;
-  margin-bottom: 36px;
-  padding: 24px 28px;
-  border-left: 2px solid rgba(158, 199, 243, 0.72);
-  background: rgba(255, 255, 255, 0.065);
-}
-
-.works-note p {
-  margin: 0 0 4px 0;
-  max-width: 76ch;
-  font-size: 0.92rem;
-  line-height: 1.9;
-  color: rgba(255, 255, 255, 0.78);
+.works-point-list li {
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(158, 199, 243, 0.34);
+  background: rgba(158, 199, 243, 0.09);
 }
 
 .works-cta {
