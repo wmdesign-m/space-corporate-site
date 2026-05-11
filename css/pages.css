@@ -617,8 +617,8 @@
 ========================= */
 #coverage {
   position: relative;
-  padding-top: 120px; /* ←余白増やす */
-  padding-bottom: 80px;
+  padding-top: 96px;
+  padding-bottom: 56px;
 }
 
 /* 薄い帯 */
@@ -658,7 +658,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(23, 37, 52, 0.14);
 }
 
 /* base */
@@ -666,9 +666,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 260px;
-  padding: 36px 28px;
-  background: var(--bg);
+  min-height: 220px;
+  padding: 28px 22px;
+  background: rgba(255, 255, 255, 0.78);
   border: none;
   box-shadow: none;
   backdrop-filter: none;
@@ -686,12 +686,12 @@
 
 /* 交互背景（画像イメージ再現） */
 #coverage .info-card:nth-child(even) {
-  background: rgba(201, 212, 222, 0.6); /* primaryを少し薄める */
+  background: rgba(201, 212, 222, 0.42);
 }
 
 /* タイトル */
 #coverage .info-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   font-weight: 700;
   margin-bottom: 12px;
   letter-spacing: 0.05em;
@@ -804,8 +804,10 @@
   padding: 0 2em 0.6em 0.5em;
   text-decoration: none;
   font-weight: 700;
+  font-size: 0.95rem;
   letter-spacing: 0.05em;
   color: var(--primary-deep);
+  transition: letter-spacing 0.24s ease, color 0.24s ease;
 }
 
 .arrow-link-underline::before {
@@ -829,6 +831,7 @@
 .arrow-link-underline:hover,
 .arrow-link-underline:focus-visible {
   color: var(--primary);
+  letter-spacing: 0.08em;
 }
 
 #about .arrow-link-underline,
@@ -895,7 +898,7 @@
 }
 
 .service-text-list > div {
-  padding: 20px 0;
+  padding: 32px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.22);
 }
 
@@ -911,14 +914,15 @@
 .service-text-list h3 {
   font-size: 1.15rem;
   color: #ffffff;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   letter-spacing: 0.03em;
+  line-height: 1.55;
 }
 
 .service-text-list p {
   margin: 0;
   color: rgba(255, 255, 255, 0.78);
-  line-height: 1.9;
+  line-height: 2;
 }
 
 #services .section-heading .eyebrow,

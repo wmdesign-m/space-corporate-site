@@ -573,7 +573,8 @@ main > .section:first-of-type {
 }
 
 .cta-final .cta-buttons .btn {
-  min-width: 210px;
+  min-width: 240px;
+  padding-inline: 32px;
 }
 
 .heading-no-margin {
@@ -836,7 +837,7 @@ main > .section:first-of-type {
 
 .bg-partner::before {
   background-image:
-    linear-gradient(rgba(18, 29, 43, 0.62), rgba(18, 29, 43, 0.62)),
+    linear-gradient(rgba(16, 32, 51, 0.58), rgba(16, 32, 51, 0.58)),
     url("../images/bg/partner-bg-pc.jpg");
   background-position: center center;
 }
