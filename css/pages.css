@@ -1795,7 +1795,6 @@
 .services-scope-section .services-number-list {
   margin-top: 42px;
   padding: 34px 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.28);
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(10px);
