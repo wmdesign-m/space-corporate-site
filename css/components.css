@@ -644,34 +644,42 @@ main > .section:first-of-type {
 }
 
 .strength-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  list-style: decimal;
   padding: 0;
-  margin: 30px 0 0;
+  margin: 42px 0 0;
 }
 
-.strength-list li {
-  min-height: 100%;
-  background: #fff;
-  padding: 28px;
-  border: 1px solid rgba(16, 32, 51, 0.06);
-  box-shadow: var(--shadow-soft);
+.strength-item {
+  border-left: 1px solid rgba(16, 32, 51, 0.14);
+  padding-left: 32px;
 }
 
-.strength-list strong {
+.strength-number {
+  margin: 0 0 12px;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: rgba(16, 32, 51, 0.46);
+}
+
+.strength-item strong {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: 800;
-  font-size: 1.04rem;
-  line-height: 1.5;
+  font-size: 1.16rem;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
 }
 
-.strength-list p {
+.strength-item p:not(.strength-number) {
   margin: 0;
   color: #607287;
-  line-height: 1.85;
+  line-height: 2;
+  max-width: 720px;
 }
 
 .accent-section {
