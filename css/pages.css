@@ -274,9 +274,9 @@
   background-image:
     linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.96) 0%,
-      rgba(255, 255, 255, 0.9) 52%,
-      rgba(255, 255, 255, 0.76) 100%
+      rgba(12, 26, 42, 0.86) 0%,
+      rgba(12, 26, 42, 0.74) 52%,
+      rgba(12, 26, 42, 0.58) 100%
     ),
     url("../images/services-main.jpg");
 }
@@ -760,45 +760,6 @@
   opacity: 0.42;
 }
 
-/* 番号あり：COVERAGE */
-#coverage .section-heading::before {
-  content: "01";
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.08em;
-  color: rgba(93, 116, 138, 0.3);
-  margin-bottom: 8px;
-}
-
-/* 番号あり：ABOUT */
-#about .section-heading::before {
-  content: "02";
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.08em;
-  color: rgba(216, 232, 248, 0.32);
-  margin-bottom: 8px;
-}
-
-/* 番号あり：WORKS */
-#works .section-heading::before {
-  content: "03";
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.08em;
-  color: rgba(184, 212, 239, 0.32);
-  margin-bottom: 8px;
-}
-
 /* ABOUT・WORKSなど濃い背景用の色調整 */
 #about .eyebrow {
   color: #d8e8f8;
@@ -897,21 +858,45 @@
   backdrop-filter: blur(1.5px);
 }
 
+#strength .strength-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#strength .strength-item {
+  padding: 22px 0;
+}
+
+#strength .strength-item + .strength-item {
+  border-top: 1px solid rgba(23, 37, 52, 0.08);
+}
+
+#strength .strength-number {
+  margin: 0 0 10px;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  color: rgba(95, 116, 138, 0.84);
+}
+
 #services .service-intro-panel,
 #services .service-text-list {
-  background: rgba(248, 251, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 18px 40px rgba(15, 29, 45, 0.18);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 18px 40px rgba(15, 29, 45, 0.24);
+  backdrop-filter: blur(10px);
   padding: 34px 36px;
 }
 
 #services .service-intro-panel {
   margin-bottom: 24px;
+  color: #ffffff;
 }
 
 .service-text-list > div {
   padding: 20px 0;
-  border-bottom: 1px solid rgba(29, 49, 70, 0.16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .service-text-list > div:first-child {
@@ -925,15 +910,24 @@
 
 .service-text-list h3 {
   font-size: 1.15rem;
-  color: #1d3146;
+  color: #ffffff;
   margin-bottom: 8px;
   letter-spacing: 0.03em;
 }
 
 .service-text-list p {
   margin: 0;
-  color: #32475d;
+  color: rgba(255, 255, 255, 0.78);
   line-height: 1.9;
+}
+
+#services .section-heading .eyebrow,
+#services .section-heading h2 {
+  color: #ffffff;
+}
+
+#services .section-heading p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 #about .section-heading h2 {
