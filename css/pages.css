@@ -1202,7 +1202,7 @@
   margin-bottom: 14px;
   font-family: var(--font-serif);
   font-size: 0.78rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.12em;
   color: rgba(93, 133, 178, 0.92);
 }
 
@@ -1374,27 +1374,32 @@
   color: #fff;
 }
 
-.page-hero-about .page-intro-kicker,
-.lower-section-dark,
-.lower-section-dark h2,
-.lower-section-dark h3,
-.lower-section-dark p,
-.lower-section-dark .eyebrow,
-.lower-cta,
-.lower-cta h2,
-.lower-cta p,
+.page-hero-about,
 .about-team-bg,
-.about-team-bg h2,
-.about-team-bg h3,
-.about-team-bg p,
-.about-team-bg .eyebrow {
-  color: #fff;
+.lower-section-dark,
+.lower-cta {
+  color: #ffffff;
 }
 
+.page-hero-about .page-intro-kicker,
+.about-team-bg .eyebrow,
+.lower-section-dark .eyebrow,
+.lower-cta .eyebrow {
+  color: rgba(216, 232, 248, 0.78);
+}
+
+.page-hero-about .page-intro-text,
+.about-team-bg p,
 .lower-section-dark p,
-.lower-cta p,
-.about-team-bg p {
+.lower-cta p {
   color: rgba(255, 255, 255, 0.78);
+}
+
+.about-team-bg h2,
+.lower-section-dark h2,
+.lower-section-dark h3,
+.lower-cta h2 {
+  color: #ffffff;
 }
 
 .lower-section p { max-width: 72ch; line-height: 2; }
@@ -1440,14 +1445,12 @@
 
 .message-sign { margin-top: 24px; font-weight: 500; }
 
-.lower-section-dark .eyebrow,
-.lower-cta .eyebrow { color: #9ec7f3; }
 
-.about-team-bg .eyebrow,
-.page-hero-about .page-intro-kicker,
+.eyebrow,
+.page-intro-kicker,
 .approach-list span,
-.breadcrumb-inner a,
-.breadcrumb-inner span,
+.system-number,
+.section-number,
 .approach-list [class*="number"] {
   font-family: var(--font-serif);
 }
@@ -1457,11 +1460,16 @@
   background:
     linear-gradient(
       90deg,
-      rgba(16, 32, 51, 0.88) 0%,
-      rgba(16, 32, 51, 0.72) 52%,
-      rgba(16, 32, 51, 0.54) 100%
+      rgba(16, 32, 51, 0.9) 0%,
+      rgba(16, 32, 51, 0.76) 52%,
+      rgba(16, 32, 51, 0.58) 100%
     ),
     url("../images/about-team.jpg") center / cover no-repeat;
+}
+
+
+.about-team-bg .image-placeholder {
+  display: none;
 }
 
 .approach-list article {
@@ -1470,7 +1478,7 @@
 }
 
 .approach-list article:last-child { border-bottom: 1px solid rgba(158, 199, 243, 0.3); }
-.approach-list span { color: rgba(158, 199, 243, 0.72); font-size: 0.8rem; letter-spacing: 0.2em; }
+.approach-list span { color: rgba(158, 199, 243, 0.72); font-size: 0.8rem; letter-spacing: 0.12em; }
 .approach-list h3 { margin: 8px 0 12px; color: #fff; }
 .approach-list p { color: rgba(225, 238, 252, 0.85); }
 
