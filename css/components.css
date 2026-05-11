@@ -838,6 +838,13 @@ main > .section:first-of-type {
   backdrop-filter: blur(10px);
 }
 
+.bg-services::before {
+  background-image:
+    linear-gradient(rgba(14, 24, 36, 0.62), rgba(14, 24, 36, 0.62)),
+    url("../images/tools-construction.jpg");
+  background-position: center center;
+}
+
 .card {
   background: rgba(255, 255, 255, 0.86);
   border: 1px solid rgba(16, 32, 51, 0.08);
