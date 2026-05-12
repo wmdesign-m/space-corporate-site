@@ -1910,3 +1910,46 @@
   margin-bottom: 8px;
   color: rgba(255, 255, 255, 0.86);
 }
+
+/* =========================
+  PAGE CONSISTENCY TUNING (PC priority)
+========================= */
+/* 下層ページのパンくずは pages.css 側で統一 */
+main + .breadcrumb { display: block; }
+.breadcrumb {
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(23, 37, 52, 0.14);
+  background: rgba(16, 32, 51, 0.92);
+}
+.breadcrumb-inner a,
+.breadcrumb-inner span { color: rgba(255, 255, 255, 0.8); }
+
+/* TOP専用背景と下層専用背景を分離 */
+#about.bg-about { background-image: none; }
+#services.bg-services { background-image: none; }
+.about-page .page-hero-about { background-image: url("../images/about-main.jpg"); }
+.services-page .page-hero-services { background-image: url("../images/services-main.jpg"); }
+.services-page .page-hero-services::before { background: linear-gradient(120deg, rgba(10,22,36,.8), rgba(10,22,36,.52)); }
+
+/* section-link の余白揃え */
+#about .section-link { margin-top: 48px; }
+.lower-section .section-link { margin-top: 56px; }
+
+/* services property list の余白と下線を調整 */
+.services-property-list {
+  gap: 10px 22px;
+  margin-top: 24px;
+}
+.services-property-list li {
+  padding: 14px 0 12px;
+  border-bottom: 1px solid rgba(16, 32, 51, 0.16);
+}
+
+/* services lower cta 白背景の可読性担保 */
+.services-page .lower-cta {
+  padding: 88px 0 92px;
+}
+.services-page .lower-cta .btn-primary {
+  background: linear-gradient(135deg, #172739, #5d85b2);
+  border-color: rgba(23, 37, 52, 0.08);
+}
