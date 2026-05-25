@@ -137,7 +137,6 @@ svg * {
   stroke-linejoin: round;
 }
 
-
 /* =========================
   共通テキスト
 ========================= */
@@ -174,7 +173,7 @@ svg * {
 
 .section-heading p:not(.eyebrow) {
   margin-top: 16px;
-  max-width: 60ch;
+  max-width: 78ch;
   font-size: 0.92rem;
   color: var(--muted);
   line-height: 1.85;
