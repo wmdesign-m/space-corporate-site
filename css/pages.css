@@ -2021,6 +2021,49 @@
   color: #d8e8f8;
 }
 
+
+#contact.cta-final {
+  position: relative;
+  padding: 96px 0;
+  color: #ffffff;
+  text-align: center;
+  background:
+    linear-gradient(90deg, rgba(15, 29, 48, 0.82) 0%, rgba(15, 29, 48, 0.66) 34%, rgba(15, 29, 48, 0.52) 70%, rgba(15, 29, 48, 0.46) 100%),
+    url("../images/lower-cta.webp") center / cover no-repeat;
+  overflow: hidden;
+}
+
+#contact.cta-final .container {
+  position: relative;
+  z-index: 1;
+}
+
+#contact.cta-final h2,
+#contact.cta-final p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+#contact.cta-final .eyebrow {
+  color: rgba(216, 232, 248, 0.9);
+}
+
+#contact.cta-final .eyebrow::after {
+  opacity: 0.55;
+}
+
+#contact.cta-final .cta-note {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+#contact.cta-final .cta-points p {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(216, 232, 248, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#contact.cta-final .cta-points p::before {
+  background: linear-gradient(135deg, #d8e8f8, #5d85b2);
+}
 /* ========================================
   WORKS PAGE：線レイアウト
 ======================================== */
