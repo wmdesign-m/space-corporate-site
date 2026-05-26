@@ -399,15 +399,15 @@
   フッター
 ========================= */
 .site-footer {
-  background: linear-gradient(180deg, #0f1d30 0%, #12243a 100%);
+  background:
+    radial-gradient(circle at top left, rgba(93, 133, 178, 0.18), transparent 32%),
+    linear-gradient(180deg, #102033 0%, #0f1d30 52%, #0b1726 100%);
   color: #ffffff;
-  padding: 56px 0 44px;
+  padding: 48px 0 40px;
 }
 
 .footer-inner {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 56px;
+  display: block;
   align-items: start;
 }
 
@@ -483,50 +483,10 @@
 }
 
 .footer-copy {
-  margin: 30px 0 0;
+  margin: 32px 0 0;
   font-size: 0.76rem;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.42);
-}
-
-.footer-cta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 4px;
-}
-
-.footer-cta p {
-  margin: 0 0 16px;
-  font-size: 0.96rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-}
-
-.footer-cta .btn {
-  width: 100%;
-  max-width: 230px;
-  min-height: 48px;
-  padding: 0 22px;
-  font-size: 0.88rem;
-}
-
-.footer-top {
-  display: inline-flex;
-  margin-top: 28px;
-  font-family: var(--font-serif);
-  font-size: 0.82rem;
-  letter-spacing: 0.14em;
-  color: rgba(255, 255, 255, 0.52);
-  transition:
-    color 0.28s ease,
-    transform 0.28s ease;
-}
-
-.footer-top:hover {
-  color: #ffffff;
-  transform: translateY(-2px);
 }
 
 /* =========================
