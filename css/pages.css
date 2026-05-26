@@ -2024,14 +2024,19 @@
 
 #contact.cta-final {
   position: relative;
+  margin: 0;
   padding: 96px 0;
   color: #ffffff;
   text-align: center;
   background:
-    linear-gradient(180deg, rgba(13, 25, 42, 0.72) 0%, rgba(13, 25, 42, 0.6) 45%, rgba(13, 25, 42, 0.7) 100%),
-    linear-gradient(100deg, rgba(12, 24, 40, 0.72) 0%, rgba(12, 24, 40, 0.5) 48%, rgba(12, 24, 40, 0.42) 100%),
-    url("../images/lower-cta.webp") 54% 45% / 112% auto no-repeat;
-  overflow: hidden;
+    linear-gradient(
+      90deg,
+      rgba(15, 29, 48, 0.72) 0%,
+      rgba(15, 29, 48, 0.56) 45%,
+      rgba(15, 29, 48, 0.44) 100%
+    ),
+    url("../images/lower-cta.webp") center 45% / cover no-repeat;
+  background-repeat: no-repeat;
 }
 
 #contact.cta-final .container {
@@ -2039,11 +2044,11 @@
   z-index: 1;
   max-width: 920px;
   padding: 44px 56px;
-  background: rgba(255, 255, 255, 0.11);
-  border: 1px solid rgba(216, 232, 248, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(216, 232, 248, 0.24);
   box-shadow: 0 20px 52px rgba(0, 0, 0, 0.24);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 #contact.cta-final h2,
