@@ -502,6 +502,7 @@ main > .section:first-of-type {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: center;
   gap: 12px;
   margin: 26px 0 34px;
 }
@@ -510,16 +511,18 @@ main > .section:first-of-type {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 58px;
+  justify-content: center;
+  min-height: 56px;
   margin: 0;
-  padding: 12px 18px 12px 38px;
+  min-width: 280px;
+  padding: 12px 20px;
+  text-align: center;
   font-size: 0.88rem;
   font-weight: 700;
   line-height: 1.6;
   color: #5f748a;
   background: rgba(255, 255, 255, 0.54);
   border: 1px solid rgba(93, 133, 178, 0.18);
-  min-width: 280px;
 }
 
 .cta-points p + p {
@@ -527,14 +530,7 @@ main > .section:first-of-type {
 }
 
 .cta-points p::before {
-  content: "";
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  width: 7px;
-  height: 7px;
-  background: linear-gradient(135deg, #172739, #5d85b2);
-  transform: translateY(-50%) rotate(45deg);
+  content: none;
 }
 
 #contact.cta-final .cta-points + p {
