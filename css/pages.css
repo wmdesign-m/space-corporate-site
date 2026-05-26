@@ -218,9 +218,9 @@
   background-image:
     linear-gradient(
       90deg,
-      rgba(16, 32, 51, 0.88) 0%,
-      rgba(16, 32, 51, 0.74) 50%,
-      rgba(16, 32, 51, 0.5) 100%
+      rgba(15, 34, 46, 0.88) 0%,
+      rgba(18, 40, 54, 0.74) 50%,
+      rgba(20, 44, 59, 0.5) 100%
     ),
     url("../images/partner-bg-pc.jpg");
 }
@@ -253,6 +253,7 @@
   WORKS
 ========================= */
 .dark-section {
+  /* WORKS: 既存の濃紺トーンを維持 */
   background: linear-gradient(180deg, #0f1d30 0%, #12243a 100%);
   color: #fff;
 }
@@ -437,6 +438,32 @@
 
 #services {
   background: #ffffff;
+}
+
+
+#company {
+  /* COMPANY: わずかにグレー寄りのネイビー */
+  background: linear-gradient(180deg, #1a2736 0%, #1f2d3d 100%);
+  color: #ffffff;
+}
+
+#company .section-heading h2,
+#company .section-heading p,
+#company .arrow-link-underline {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#company .section-heading p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+#company .eyebrow {
+  color: #c3d8ee;
+}
+
+#company .company-summary-table {
+  background: rgba(255, 255, 255, 0.86);
+  border-color: rgba(16, 32, 51, 0.14);
 }
 
 #partner {
